@@ -14,12 +14,12 @@ const Footer = () => {
   ]
 
   const services = [
-    { label: "Web Development", href: "#" },
-    { label: "Mobile Apps", href: "#" },
-    { label: "Cloud Solutions", href: "#" },
-    { label: "AI & ML", href: "#" },
-    { label: "UI/UX Design", href: "#" },
-    { label: "Consulting", href: "#" }
+    { label: "VoIP Solutions", href: "#" },
+    { label: "Dialer Termination", href: "#" },
+    { label: "Inbound Origination", href: "#" },
+    { label: "Enterprise Communication", href: "#" },
+    { label: "Call Analytics", href: "#" },
+    { label: "Telecom Consulting", href: "#" }
   ]
 
   const socialLinks = [
@@ -72,18 +72,18 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-glow rounded-lg shadow-glow" />
-              <span className="text-2xl font-bold text-foreground">Nexus</span>
+              <span className="text-2xl font-bold text-foreground">Dial Edge Telecom</span>
             </div>
             
             <p className="text-muted-foreground leading-relaxed">
-              Pioneering the future of digital innovation with cutting-edge solutions that transform businesses worldwide.
+              Revolutionizing business communication through innovative telecom solutions, reliable infrastructure, and world-class voice connectivity services.
             </p>
 
             {/* Contact info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300">
                 <Mail className="w-4 h-4" />
-                <span>hello@nexus.com</span>
+                <span>contact@dialedgetelecom.com</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300">
                 <Phone className="w-4 h-4" />
@@ -170,7 +170,7 @@ const Footer = () => {
         <div className="border-t border-primary/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-muted-foreground text-sm">
-              © 2024 Nexus. All rights reserved. Crafted with innovation and precision.
+              © 2024 Dial Edge Telecom. All rights reserved. Founded by Mr. Umair Malik.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">

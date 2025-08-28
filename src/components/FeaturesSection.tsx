@@ -4,34 +4,34 @@ import { Cpu, Shield, Zap, Globe, Brain, Rocket } from "lucide-react"
 const FeaturesSection = () => {
   const features = [
     {
-      icon: Cpu,
-      title: "AI-Powered Analytics",
-      description: "Advanced machine learning algorithms analyze your data patterns in real-time, providing actionable insights."
+      icon: Zap,
+      title: "High-Quality Voice",
+      description: "Crystal-clear voice connectivity with premium call quality and minimal latency worldwide."
     },
     {
       icon: Shield,
-      title: "Quantum Security",
-      description: "Military-grade encryption with quantum-resistant protocols ensures your data stays protected."
-    },
-    {
-      icon: Zap,
-      title: "Lightning Performance",
-      description: "Edge computing infrastructure delivers sub-10ms response times across global networks."
+      title: "Secure Infrastructure",
+      description: "Enterprise-grade security protocols protecting your communication channels and business data."
     },
     {
       icon: Globe,
-      title: "Global Scalability",
-      description: "Seamlessly scale from startup to enterprise with our distributed cloud architecture."
+      title: "Global Coverage",
+      description: "Worldwide telecom infrastructure with reliable connectivity and 99.9% uptime guarantee."
+    },
+    {
+      icon: Cpu,
+      title: "Smart Routing",
+      description: "Intelligent call routing algorithms that optimize connection quality and reduce costs."
     },
     {
       icon: Brain,
-      title: "Predictive Intelligence",
-      description: "Neural networks predict user behavior and system needs before they happen."
+      title: "Real-Time Analytics",
+      description: "Comprehensive call analytics and reporting for data-driven communication insights."
     },
     {
       icon: Rocket,
-      title: "Rapid Deployment",
-      description: "Deploy complex applications in minutes with our automated CI/CD pipelines."
+      title: "Scalable Solutions",
+      description: "Flexible telecom infrastructure that grows with your business needs and requirements."
     }
   ]
 

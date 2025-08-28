@@ -4,51 +4,51 @@ import { Star, Quote } from "lucide-react"
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "CTO, TechVision Inc.",
-      company: "Fortune 500 Company",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b830?w=150&h=150&fit=crop&crop=face",
-      content: "The team delivered an exceptional digital transformation solution that exceeded our expectations. Their innovative approach reduced our processing time by 75%.",
-      rating: 5
-    },
-    {
-      name: "Marcus Rodriguez",
-      role: "Founder & CEO",
-      company: "NextGen Startups",
+      name: "Michael Johnson",
+      role: "Operations Director",
+      company: "CallCenter Pro",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-      content: "Working with this team was a game-changer. They built our entire platform from scratch and helped us scale from 0 to 100K users in just 6 months.",
+      content: "Dial Edge Telecom transformed our call center operations. Their dialer termination services increased our success rates by 45% while reducing costs significantly. Outstanding service quality!",
       rating: 5
     },
     {
-      name: "Dr. Emily Watson",
-      role: "Head of Digital Innovation",
-      company: "MedTech Solutions",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face",
-      content: "Their AI-powered analytics platform revolutionized how we handle patient data. The security features are top-notch and compliance was seamless.",
+      name: "Lisa Martinez",
+      role: "IT Manager",
+      company: "Global Enterprise Solutions",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b830?w=150&h=150&fit=crop&crop=face",
+      content: "The VoIP solutions provided by Dial Edge Telecom revolutionized our communication infrastructure. Crystal clear voice quality and reliable connectivity across all our international offices.",
       rating: 5
     },
     {
-      name: "James Park",
-      role: "VP of Engineering",
-      company: "CloudScale Systems",
+      name: "David Thompson",
+      role: "CEO",
+      company: "TeleMarketing Dynamics",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-      content: "Impressive technical expertise and attention to detail. They migrated our entire infrastructure to the cloud with zero downtime. Absolutely phenomenal work.",
+      content: "Their inbound origination services ensure we never miss a call. The 24/7 reliability and real-time analytics have been game-changing for our business growth and customer satisfaction.",
       rating: 5
     },
     {
-      name: "Lisa Thompson",
-      role: "Creative Director",
-      company: "Digital Agency Pro",
+      name: "Amanda Foster",
+      role: "VP of Communications",
+      company: "TechCorp International",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      content: "The design and user experience they created for our clients consistently wins awards. Their creative vision combined with technical skill is unmatched.",
+      content: "Dial Edge Telecom's enterprise communication solutions scaled perfectly with our global expansion. Their dedicated support team ensures we maintain crystal-clear communication worldwide.",
       rating: 5
     },
     {
-      name: "Alex Kumar",
-      role: "Startup Founder",
-      company: "FinTech Innovations",
+      name: "Robert Kim",
+      role: "Founder",
+      company: "StartupCall Solutions",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-      content: "From MVP to Series A, they've been our technology partner every step of the way. Their solutions helped us secure $5M in funding.",
+      content: "From startup to scale-up, Dial Edge Telecom has been our trusted telecom partner. Their cost-effective VoIP solutions helped us save 60% on communication costs while improving quality.",
+      rating: 5
+    },
+    {
+      name: "Jennifer Lee",
+      role: "Operations Manager",
+      company: "Customer Support Plus",
+      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face",
+      content: "The call analytics and real-time monitoring features have transformed how we manage our customer support operations. Incredible insights and performance improvements across the board.",
       rating: 5
     }
   ]

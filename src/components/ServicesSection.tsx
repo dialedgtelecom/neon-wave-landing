@@ -6,45 +6,45 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Code,
-      title: "Custom Development",
-      description: "Bespoke software solutions crafted with cutting-edge technologies and frameworks.",
-      features: ["React & Next.js", "Node.js Backend", "TypeScript", "Progressive Web Apps"],
-      price: "From $5,000"
+      title: "VoIP Solutions",
+      description: "Advanced Voice over Internet Protocol services for cost-effective business communication.",
+      features: ["Crystal Clear Audio", "Global Coverage", "Cost Reduction", "Easy Integration"],
+      price: "Contact Us"
     },
     {
       icon: Cloud,
-      title: "Cloud Architecture",
-      description: "Scalable cloud infrastructure designed for performance, security, and growth.",
-      features: ["AWS/Azure Setup", "Microservices", "Auto-scaling", "CI/CD Pipelines"],
-      price: "From $3,000"
+      title: "Dialer Termination",
+      description: "High-performance dialer termination services for call centers and telemarketing operations.",
+      features: ["High Success Rates", "Real-Time Monitoring", "Scalable Infrastructure", "Quality Assurance"],
+      price: "Contact Us"
     },
     {
       icon: Database,
-      title: "Data Engineering",
-      description: "Transform raw data into actionable insights with advanced analytics platforms.",
-      features: ["Data Warehousing", "ETL Pipelines", "Real-time Analytics", "ML Integration"],
-      price: "From $4,000"
+      title: "Inbound Origination",
+      description: "Reliable inbound call services ensuring your business is always reachable worldwide.",
+      features: ["24/7 Availability", "Call Analytics", "Multi-Channel Support", "Geographic Flexibility"],
+      price: "Contact Us"
     },
     {
       icon: Smartphone,
-      title: "Mobile Solutions",
-      description: "Native and cross-platform mobile applications for iOS and Android.",
-      features: ["React Native", "Flutter", "Native iOS/Android", "App Store Optimization"],
-      price: "From $8,000"
+      title: "Enterprise Communication",
+      description: "Comprehensive telecom solutions for large-scale enterprise communication needs.",
+      features: ["Custom Solutions", "Dedicated Support", "SLA Guarantees", "Integration Services"],
+      price: "Contact Us"
     },
     {
       icon: Palette,
-      title: "UI/UX Design",
-      description: "User-centered design that combines aesthetics with optimal user experience.",
-      features: ["Design Systems", "Prototyping", "User Research", "Accessibility"],
-      price: "From $2,500"
+      title: "Call Analytics",
+      description: "Advanced call monitoring and analytics for optimized communication performance.",
+      features: ["Real-time Reporting", "Performance Metrics", "Quality Monitoring", "ROI Analysis"],
+      price: "Contact Us"
     },
     {
       icon: Search,
-      title: "SEO & Marketing",
-      description: "Digital marketing strategies to boost your online presence and conversions.",
-      features: ["Technical SEO", "Content Strategy", "PPC Campaigns", "Analytics Setup"],
-      price: "From $1,500"
+      title: "Telecom Consulting",
+      description: "Expert consultation services to optimize your telecommunication infrastructure.",
+      features: ["Infrastructure Review", "Cost Optimization", "Strategy Planning", "Implementation Support"],
+      price: "Contact Us"
     }
   ]
 

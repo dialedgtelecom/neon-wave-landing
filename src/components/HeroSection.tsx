@@ -28,18 +28,18 @@ const HeroSection = () => {
         {/* Main headline */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-in-up">
           <span className="bg-gradient-to-r from-foreground via-primary-glow to-foreground bg-clip-text text-transparent">
-            Next-Gen
+            Revolutionary
           </span>
           <br />
           <span className="text-foreground">
-            Digital Solutions
+            Telecom Solutions
           </span>
         </h1>
         
         {/* Subtext */}
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-          Experience the convergence of innovation and design. 
-          We craft digital experiences that transcend boundaries and redefine possibilities.
+          Transforming business communication through innovative VoIP, dialer termination, 
+          and enterprise-level telecom infrastructure since 2024.
         </p>
         
         {/* CTA Buttons */}

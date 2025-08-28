@@ -16,7 +16,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-glow rounded-lg shadow-glow" />
-            <span className="font-bold text-lg text-foreground">Nexus</span>
+            <span className="font-bold text-lg text-foreground">Dial Edge Telecom</span>
           </div>
           
           {/* Navigation Items */}
