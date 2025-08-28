@@ -52,8 +52,8 @@ const ServicesSection = () => {
     <section className="py-24 px-6 relative bg-background/50">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-48 h-48 bg-primary-glow/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-48 h-48 bg-primary-glow/5 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10">
@@ -75,15 +75,15 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <GlassmorphismCard 
               key={service.title}
-              className="p-8 group hover:scale-105 transition-all duration-500 hover:shadow-glow relative overflow-hidden"
+              className="p-8 group relative overflow-hidden"
               style={{ 
                 animationDelay: `${index * 0.15}s` 
               }}
             >
               {/* Service icon and header */}
               <div className="flex items-start justify-between mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary-glow/20 rounded-xl flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
-                  <service.icon className="w-7 h-7 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary-glow/20 rounded-xl flex items-center justify-center">
+                  <service.icon className="w-7 h-7 text-primary" />
                 </div>
                 <div className="text-right">
                   <div className="text-sm text-muted-foreground">Starting</div>
@@ -92,7 +92,7 @@ const ServicesSection = () => {
               </div>
 
               {/* Service details */}
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-foreground mb-3">
                 {service.title}
               </h3>
               
@@ -116,11 +116,11 @@ const ServicesSection = () => {
                 className="w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground group/btn"
               >
                 Learn More
-                <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
 
               {/* Hover glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary-glow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
+              {/* Hover glow effect - removed animation */}
             </GlassmorphismCard>
           ))}
         </div>
@@ -136,7 +136,7 @@ const ServicesSection = () => {
             </p>
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-glow hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-primary to-primary-glow"
             >
               Get Custom Quote
               <ArrowRight className="w-5 h-5 ml-2" />

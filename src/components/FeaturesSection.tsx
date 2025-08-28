@@ -55,22 +55,22 @@ const FeaturesSection = () => {
         {features.map((feature, index) => (
           <GlassmorphismCard 
             key={feature.title}
-            className="p-8 group hover:scale-105 transition-all duration-500 hover:shadow-glow"
+            className="p-8 group"
             style={{ 
               animationDelay: `${index * 0.1}s` 
             }}
           >
             {/* Icon */}
             <div className="relative mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary-glow/20 rounded-2xl flex items-center justify-center mb-4 group-hover:shadow-glow transition-all duration-300">
-                <feature.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+              <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary-glow/20 rounded-2xl flex items-center justify-center mb-4">
+                <feature.icon className="w-8 h-8 text-primary" />
               </div>
               {/* Glow effect */}
-              <div className="absolute inset-0 w-16 h-16 bg-gradient-to-br from-primary/10 to-primary-glow/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              {/* Glow effect - removed animation */}
             </div>
 
             {/* Content */}
-            <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
+            <h3 className="text-xl font-semibold text-foreground mb-4">
               {feature.title}
             </h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -78,7 +78,7 @@ const FeaturesSection = () => {
             </p>
 
             {/* Animated border */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primary/0 via-primary/30 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-sm" />
+            {/* Background glow effect - removed animation */}
           </GlassmorphismCard>
         ))}
       </div>

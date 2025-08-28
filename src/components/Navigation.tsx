@@ -10,7 +10,7 @@ const Navigation = () => {
   ]
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 animate-slide-in-up">
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
       <GlassmorphismCard className="px-6 py-3">
         <div className="flex items-center space-x-8">
           {/* Logo */}
@@ -29,10 +29,10 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300 relative group"
+                className="text-muted-foreground hover:text-foreground relative group"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-glow transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-glow group-hover:w-full" />
               </a>
             ))}
           </div>
@@ -40,7 +40,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <Button 
             variant="outline" 
-            className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-glow transition-all duration-300"
+            className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground"
           >
             Get Started
           </Button>

@@ -57,8 +57,8 @@ const TestimonialsSection = () => {
     <section className="py-24 px-6 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/6 w-64 h-64 bg-gradient-to-l from-primary-glow/10 to-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/6 w-64 h-64 bg-gradient-to-l from-primary-glow/10 to-primary/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10">
@@ -80,7 +80,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <GlassmorphismCard 
               key={testimonial.name}
-              className="p-8 group hover:scale-105 transition-all duration-500 hover:shadow-glow relative"
+              className="p-8 group relative"
               style={{ 
                 animationDelay: `${index * 0.1}s` 
               }}
@@ -111,12 +111,12 @@ const TestimonialsSection = () => {
                   <img 
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all duration-300"
+                    className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20"
                   />
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary-glow/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  {/* Glow effect - removed animation */}
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                  <div className="font-semibold text-foreground">
                     {testimonial.name}
                   </div>
                   <div className="text-sm text-muted-foreground">{testimonial.role}</div>
@@ -125,7 +125,7 @@ const TestimonialsSection = () => {
               </div>
 
               {/* Hover glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary-glow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
+              {/* Hover glow effect - removed animation */}
             </GlassmorphismCard>
           ))}
         </div>
@@ -135,25 +135,25 @@ const TestimonialsSection = () => {
           <GlassmorphismCard className="p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="group">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   500+
                 </div>
                 <div className="text-muted-foreground">Projects Delivered</div>
               </div>
               <div className="group">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   98%
                 </div>
                 <div className="text-muted-foreground">Client Satisfaction</div>
               </div>
               <div className="group">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   150+
                 </div>
                 <div className="text-muted-foreground">Team Members</div>
               </div>
               <div className="group">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   50+
                 </div>
                 <div className="text-muted-foreground">Countries Served</div>

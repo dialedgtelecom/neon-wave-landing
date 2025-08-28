@@ -33,9 +33,9 @@ const Footer = () => {
     <footer className="relative py-20 px-6 bg-background/80 backdrop-blur-sm">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-60 h-60 bg-primary-glow/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-primary/5 to-primary-glow/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
+        <div className="absolute top-10 left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-60 h-60 bg-primary-glow/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-primary/5 to-primary-glow/5 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -58,10 +58,10 @@ const Footer = () => {
               className="flex-1 bg-background/50 border-primary/30 focus:border-primary"
             />
             <Button 
-              className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-glow hover:scale-105 transition-all duration-300 group"
+              className="bg-gradient-to-r from-primary to-primary-glow group"
             >
               Subscribe
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
         </GlassmorphismCard>
@@ -85,15 +85,15 @@ const Footer = () => {
 
             {/* Contact info */}
             <div className="space-y-3">
-              <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300">
+              <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary">
                 <Mail className="w-4 h-4" />
                 <span>contact@dialedgetelecom.com</span>
               </div>
-              <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300">
+              <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary">
                 <Phone className="w-4 h-4" />
                 <span>+1 (555) 123-4567</span>
               </div>
-              <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300">
+              <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary">
                 <MapPin className="w-4 h-4" />
                 <span>San Francisco, CA</span>
               </div>
@@ -108,10 +108,10 @@ const Footer = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="block text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
+                  className="block text-muted-foreground hover:text-primary relative group"
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-glow transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-glow group-hover:w-full" />
                 </a>
               ))}
             </div>
@@ -125,10 +125,10 @@ const Footer = () => {
                 <a
                   key={service.label}
                   href={service.href}
-                  className="block text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
+                  className="block text-muted-foreground hover:text-primary relative group"
                 >
                   {service.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-glow transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-glow group-hover:w-full" />
                 </a>
               ))}
             </div>
@@ -144,7 +144,7 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-lg flex items-center justify-center text-primary hover:text-primary-glow hover:scale-110 hover:shadow-glow transition-all duration-300"
+                  className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-lg flex items-center justify-center text-primary hover:text-primary-glow"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />
@@ -164,7 +164,7 @@ const Footer = () => {
                 className="w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground group"
               >
                 Get In Touch
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </GlassmorphismCard>
           </div>
@@ -177,13 +177,13 @@ const Footer = () => {
               © 2024 Dial Edge Telecom. All rights reserved. Founded by Mr. Umair Malik.
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+              <a href="#" className="text-muted-foreground hover:text-primary">
                 Privacy Policy
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+              <a href="#" className="text-muted-foreground hover:text-primary">
                 Terms of Service
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+              <a href="#" className="text-muted-foreground hover:text-primary">
                 Cookies
               </a>
             </div>
@@ -193,8 +193,8 @@ const Footer = () => {
 
       {/* Floating network connections */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-24 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent animate-network-flow" />
-        <div className="absolute bottom-1/3 right-1/3 w-32 h-px bg-gradient-to-r from-transparent via-primary/15 to-transparent animate-network-flow" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/4 left-1/4 w-24 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+        <div className="absolute bottom-1/3 right-1/3 w-32 h-px bg-gradient-to-r from-transparent via-primary/15 to-transparent" />
       </div>
     </footer>
   )
