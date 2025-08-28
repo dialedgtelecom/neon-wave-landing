@@ -3,84 +3,51 @@ import { GlassmorphismCard } from "@/components/ui/glassmorphism-card"
 import { ArrowRight, Sparkles } from "lucide-react"
 import digitalWavesBg from "@/assets/digital-waves-bg.jpg"
 
-const HeroSection = () => {
+export default function Hero() {
   return (
-    <section 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${digitalWavesBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
-      {/* Overlay for better contrast */}
-      <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
-      
-      {/* Hero content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        {/* Badge */}
-        <GlassmorphismCard variant="glow" className="inline-flex items-center space-x-2 px-4 py-2 mb-8">
-          <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm font-medium text-primary">Welcome to the Future</span>
-        </GlassmorphismCard>
-        
-        {/* Main headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
-          <span className="bg-gradient-to-r from-foreground via-primary-glow to-foreground bg-clip-text text-transparent">
-            Revolutionary
-          </span>
-          <br />
-          <span className="text-foreground">
-            Telecom Solutions
-          </span>
-        </h1>
-        
-        {/* Subtext */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          Transforming business communication through innovative VoIP, dialer termination, 
-          and enterprise-level telecom infrastructure since 2024.
-        </p>
-        
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-primary to-primary-glow group px-8 py-4"
-          >
-            Explore Solutions
-            <ArrowRight className="w-5 h-5 ml-2" />
+    <section className="relative flex flex-col items-center justify-center text-center py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
+      {/* Glow background */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-radial from-[#AB0F25]/40 to-transparent opacity-70"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+      />
+
+      <div className="relative z-10 max-w-4xl px-6">
+        <motion.h1
+          className="text-5xl md:text-7xl font-extrabold tracking-tight"
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          Empowering <span className="text-[#AB0F25]">Communication</span>
+        </motion.h1>
+
+        <motion.p
+          className="mt-6 text-lg md:text-xl text-gray-300"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+        >
+          Next-gen VoIP, cloud, and app solutions designed for speed, scale, and security.
+        </motion.p>
+
+        <motion.div
+          className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 1 }}
+        >
+          <Button size="lg" className="bg-[#AB0F25] hover:bg-[#8c0c1d] rounded-2xl shadow-lg">
+            Get Started
           </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-primary/50 text-primary hover:bg-primary/10 hover:border-primary px-8 py-4"
-          >
-            Watch Demo
+          <Button size="lg" variant="outline" className="rounded-2xl border-gray-600 text-gray-200 hover:bg-gray-800">
+            Learn More
           </Button>
-        </div>
-        
-        {/* Stats or features */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          <GlassmorphismCard className="p-6 text-center">
-            <div className="text-2xl font-bold text-primary mb-2">99.9%</div>
-            <div className="text-muted-foreground">Uptime Guarantee</div>
-          </GlassmorphismCard>
-          
-          <GlassmorphismCard className="p-6 text-center">
-            <div className="text-2xl font-bold text-primary mb-2">10ms</div>
-            <div className="text-muted-foreground">Response Time</div>
-          </GlassmorphismCard>
-          
-          <GlassmorphismCard className="p-6 text-center">
-            <div className="text-2xl font-bold text-primary mb-2">24/7</div>
-            <div className="text-muted-foreground">Expert Support</div>
-          </GlassmorphismCard>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
 }
-
 export default HeroSection
