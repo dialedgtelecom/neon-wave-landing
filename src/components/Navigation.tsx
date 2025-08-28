@@ -18,7 +18,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/d419d9a4-959a-4ee7-b1fc-eaa45b3160e6.png" 
               alt="Dial Edge Telecom" 
-              className="w-10 h-10 object-contain"
+              className="w-14 h-14 object-contain"
             />
             <span className="font-bold text-lg text-foreground">Dial Edge Telecom</span>
           </div>

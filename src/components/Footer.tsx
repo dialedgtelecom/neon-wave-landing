@@ -74,7 +74,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/d419d9a4-959a-4ee7-b1fc-eaa45b3160e6.png" 
                 alt="Dial Edge Telecom" 
-                className="w-12 h-12 object-contain"
+                className="w-16 h-16 object-contain"
               />
               <span className="text-2xl font-bold text-foreground">Dial Edge Telecom</span>
             </div>
