@@ -14,8 +14,12 @@ const Navigation = () => {
       <GlassmorphismCard className="px-6 py-3">
         <div className="flex items-center space-x-8">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-glow rounded-lg shadow-glow" />
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/d419d9a4-959a-4ee7-b1fc-eaa45b3160e6.png" 
+              alt="Dial Edge Telecom" 
+              className="w-10 h-10 object-contain"
+            />
             <span className="font-bold text-lg text-foreground">Dial Edge Telecom</span>
           </div>
           

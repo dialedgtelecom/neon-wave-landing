@@ -71,7 +71,11 @@ const Footer = () => {
           {/* Company info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-glow rounded-lg shadow-glow" />
+              <img 
+                src="/lovable-uploads/d419d9a4-959a-4ee7-b1fc-eaa45b3160e6.png" 
+                alt="Dial Edge Telecom" 
+                className="w-12 h-12 object-contain"
+              />
               <span className="text-2xl font-bold text-foreground">Dial Edge Telecom</span>
             </div>
             
