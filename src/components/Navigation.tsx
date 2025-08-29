@@ -3,9 +3,11 @@ import { GlassmorphismCard } from "@/components/ui/glassmorphism-card"
 import { ChevronDown } from "lucide-react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
+import GetStartedForm from "./GetStartedForm"
 
 const Navigation = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const [isFormOpen, setIsFormOpen] = useState(false)
   
   const navItems = [
     { label: "Home", href: "/" },
@@ -95,11 +97,18 @@ const Navigation = () => {
           <Button 
             variant="outline" 
             className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground"
+            onClick={() => setIsFormOpen(true)}
           >
             Get Started
           </Button>
         </div>
       </GlassmorphismCard>
+
+      {/* Get Started Form Modal */}
+      <GetStartedForm 
+        isOpen={isFormOpen} 
+        onClose={() => setIsFormOpen(false)} 
+      />
     </nav>
   )
 }

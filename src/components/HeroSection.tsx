@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import { Link } from "react-router-dom"
+import { useState } from "react"
+import GetStartedForm from "./GetStartedForm"
 
 export default function HeroSection() {
+  const [isFormOpen, setIsFormOpen] = useState(false)
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
       {/* Background with gradient overlay */}
@@ -49,15 +52,14 @@ export default function HeroSection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Link to="/services">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-primary to-primary-glow hover:from-primary-glow hover:to-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-4 text-lg"
-            >
-              Get Started Today
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </Link>
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-primary to-primary-glow hover:from-primary-glow hover:to-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-4 text-lg"
+            onClick={() => setIsFormOpen(true)}
+          >
+            Get Started Today
+            <ArrowRight className="w-5 h-5 ml-2" />
+          </Button>
           
           <Link to="/about">
             <Button 
@@ -85,6 +87,12 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* Get Started Form Modal */}
+      <GetStartedForm 
+        isOpen={isFormOpen} 
+        onClose={() => setIsFormOpen(false)} 
+      />
     </section>
   )
 }

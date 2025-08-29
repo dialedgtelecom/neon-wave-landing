@@ -4,8 +4,11 @@ import { GlassmorphismCard } from "@/components/ui/glassmorphism-card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Phone, Cloud, Database, Smartphone, BarChart3, Headphones, CheckCircle } from "lucide-react"
+import { useState } from "react"
+import GetStartedForm from "@/components/GetStartedForm"
 
 const Services = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false)
   const services = [
     {
       icon: Phone,
@@ -168,6 +171,7 @@ const Services = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
                     className="flex-1 bg-gradient-to-r from-primary to-primary-glow"
+                    onClick={() => setIsFormOpen(true)}
                   >
                     Get Started
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -203,6 +207,7 @@ const Services = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-primary to-primary-glow"
+                onClick={() => setIsFormOpen(true)}
               >
                 Schedule Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -218,6 +223,12 @@ const Services = () => {
           </GlassmorphismCard>
         </div>
       </section>
+
+      {/* Get Started Form Modal */}
+      <GetStartedForm 
+        isOpen={isFormOpen} 
+        onClose={() => setIsFormOpen(false)} 
+      />
 
       <Footer />
     </div>
